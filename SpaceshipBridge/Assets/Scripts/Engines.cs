@@ -16,7 +16,7 @@ public class Engines : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         transform.Rotate(pitch, yaw, roll);
         rb.AddForce(transform.forward * thrust);
 	}
